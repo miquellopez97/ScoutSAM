@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     // Aquí puedes realizar la lógica de autenticación, por ejemplo, enviar una solicitud al servidor
@@ -11,6 +13,9 @@ const Login = ({ onLogin }) => {
     // y redirigirlo a la página protegida.
     if ((username === 'martiroget' || username === 'miquellopez' || username === 'edusabater') && password === 'manelesdeu') {
       onLogin();
+      navigate('/'); // Redirige al usuario a la página principal después de iniciar sesión
+    } else {
+      alert('Nombre de usuario o contraseña incorrectos');
     }
   };
 

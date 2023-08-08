@@ -2,14 +2,13 @@
   text-align: center;
 }
 
-body {
-  background-color: #282c34;
-  color: white;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body {
+  margin: 30px; /* Puedes ajustar el valor de margen según tus preferencias */
 }
 
 @media (prefers-reduced-motion: no-preference) {

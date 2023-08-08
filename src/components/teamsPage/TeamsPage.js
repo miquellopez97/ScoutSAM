@@ -1,20 +1,21 @@
 import React from 'react';
 import Team from '../team/Team';
 import teamsData from '../../data/TeamsData';
+import './TeamsPage.css'; // Agrega el archivo de estilos externo si es necesario
 
 const TeamsPage = () => {
   return (
-    <div style={{width: "60%", display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
-      <h1 style={{textAlign: "center", width: "100%"}}>Copa Catalunya Masculina - FASE PRÈVIA- 02</h1>
-      {teamsData.map((team) => (
-        <div key={team.id} className="col-md-auto" style={{backgroundColor: "white", margin: "1em", borderRadius: "20%"}}>
-          <Team
-            teamName={team.name}
-            teamLogo={team.teamPhoto}
-            statsLink={team.teamStats}
-          />
-        </div>
-      ))}
+    <div className="teams-page-container">
+      <h1 className="page-title">
+        Copa Catalunya Masculina - FASE PRÈVIA- 02
+      </h1>
+      <div className="teams-container">
+        {teamsData.map((team) => (
+          <div key={team.id} className="team-container">
+            <Team teamName={team.name} teamLogo={team.teamPhoto} statsLink={team.teamStats} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

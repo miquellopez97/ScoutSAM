@@ -1,0 +1,34 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.teams-page-container {
+  width: 100%;
+  height: 100vh; /* El contenido ocupa toda la pantalla vertical */
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+}
+
+.teams-container {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.team-container {
+  width: 20%;
+  margin: 1em;
+}
+
+/* Agrega cualquier otro estilo que necesites para los componentes Team y otros elementos */
