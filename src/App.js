@@ -16,13 +16,6 @@ const App = () => {
     setIsAuthenticated(true);
   };
 
-  const handleLogout = () => {
-    // Lógica de cierre de sesión aquí, por ejemplo, borrar tokens de acceso
-    // Establecer isAuthenticated en false y eliminar la clave 'isAuthenticated' de localStorage
-    setIsAuthenticated(false);
-    localStorage.removeItem('isAuthenticated');
-  };
-
   // Guardar el estado de isAuthenticated en localStorage cada vez que cambie
   useEffect(() => {
     localStorage.setItem('isAuthenticated', isAuthenticated);
