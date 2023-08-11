@@ -2,8 +2,8 @@ import React from 'react';
 
 const CircleInfo = ({ avg, number1, number2, text }) => {
   const circleStyle = {
-    width: '9em',
-    height: '9em',
+    width: '6em',
+    height: '6em',
     borderRadius: '50%',
     textAlign: 'center',
     display: 'flex',
@@ -26,13 +26,13 @@ const CircleInfo = ({ avg, number1, number2, text }) => {
   const dashOffset = ((100 - clipValue) / 100) * circumference;
 
   const circleBorder = {
-    stroke: 'darkblue',
+    stroke: '#B0B0B0',
     strokeWidth: '7',
     fill: 'transparent',
   };
 
   const circleFill = {
-    stroke: 'lightblue',
+    stroke: '#A79A54',
     strokeWidth: '7',
     fill: 'transparent',
     strokeDasharray: `${dashArray}`,

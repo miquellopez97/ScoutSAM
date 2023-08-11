@@ -18,7 +18,7 @@ const TeamStats = () => {
 
   const backgroundColor = {
     backgroundImage: `linear-gradient(${desaturatedColor1}, ${desaturatedColor2})`,
-    height: '100vh', // Asegurar que el componente ocupe toda la altura de la pantalla
+    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
   };
@@ -26,10 +26,8 @@ const TeamStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Realizar la solicitud GET a la URL de statsLink en el equipo encontrado
-        const response = await axios.get(team.teamStats);
-
-        // Establecer los datos obtenidos en el estado del componente
+        const url = 'https://msstats.optimalwayconsulting.com/v1/fcbq/team-stats/team/'+ team.id +'/season/2022';
+        const response = await axios.get(url);
         setData(response.data);
         setLoading(false);
       } catch (error) {
@@ -39,7 +37,7 @@ const TeamStats = () => {
     };
 
     if (team) {
-      fetchData(); // Llamar a la función para obtener los datos al cargar el componente
+      fetchData();
     }
   }, [team]);
 
@@ -48,40 +46,150 @@ const TeamStats = () => {
   }
 
   const firstThreePlayers = data.players?.slice(0, 3);
+  const secondaryPlayers = team.secondary ? data.players?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
+
+  const titleStyle = {
+    margin: '0.5em 0 0.2em',
+    backgroundColor: 'white',
+    display: 'inline-block',
+    padding: '0.2em 0.8em',
+    borderRadius: '0.5em',
+  };
+
+  const whiteBackground = {
+    backgroundColor: 'white',
+    padding: '1em',
+    borderRadius: '0.5em',
+    fontSize: '1em',
+    fontWeight: 'bold',
+  };
+
+  const specificFontSize = {
+    fontSize: '1.4em', // Tamaño de fuente específico para este h4
+  };
+
+  const secondColumn = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'baseline'
+  };
+
+  //Add Claus del partit
+  const gameTips = team.tips?.map(tip => tip.toLocaleUpperCase()) || [];
+
+  //Add Punts a tenir en compte
+  const defPointsConsider = team.pointsConsider.def?.map(tip => tip) || [];
+  const atcPointsConsider = team.pointsConsider.atc?.map(tip => tip) || [];
+
+  //Add videos
+  const videos = team.videos?.map(video => video) || [];
 
   return (
     <div style={backgroundColor}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <Link to="/">
-          <img
-            src="/home.svg"
-            alt="Home"
-            style={{ width: '3em', height: '3em', backgroundColor:"white", borderRadius:"30%", margin:"1em" }}
-          />
-        </Link>
-        <img
-          src={team.teamPhoto}
-          alt={team.name}
-          style={{ width: '100px', height: '100px' }}
-        />
-      </div>
       {loading ? (
         <p>Cargando datos...</p>
       ) : (
-        <div className="containerStats"  style={{ margin: '20px' }}>
+        <div className="containerStats" style={{ margin: '20px' }}>
           <Row>
             <Col className="firtsColumn col-4">
-              <h3>Tirs generals:</h3>
-              <GeneralShoots team={data.team}/>
+              <div style={{margin:"0em 0em"}}>
+                <Link to="/">
+                  <img
+                    src="/home.svg"
+                    alt="Home"
+                    style={{ width: '3em', height: '3em', backgroundColor:"white", borderRadius:"30%", margin:"0em" }}
+                  />
+                </Link>
+              </div>
+              <div>
+                <h3 style={titleStyle}>Dades generals:</h3>
+                <GeneralShoots team={data.team}/>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", maxWidth: "25em", textAlign: "center", margin: "1em auto" }}>
+                  <img
+                    src={team.teamPhoto}
+                    alt={team.name}
+                    style={{ width: '8em', height: '8em', display: 'block', margin: '0 auto', borderRadius: '10%', marginRight: '1em' }}
+                  />
+                  <p style={{ ...whiteBackground, ...specificFontSize }}>
+                    {team.name}
+                    <br />
+                    AVERAGE - {team.avg ? `(${team.avg})` : `(0)`}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h3 style={titleStyle}>Claus del partit:</h3>               
+                {gameTips.map((point, index) => (
+                  <p style={{ ...whiteBackground, display: 'inline-block' }} key={index}>{point ? `- ${point}` : '-Work in progress'}</p>
+                ))}
+              </div>
+              <div>
+                <h3 style={titleStyle}>Punts a tenir en compte:</h3>
+                <ul className="list-unstyled" style={{ backgroundColor: 'white', display: 'block', padding:"1em" }}>
+                  <li className="font-weight-bold" style={{ fontWeight:"bold" }}>Defensa</li>
+                  <ul className="list-inline">
+                    {defPointsConsider.map((point, index) => (
+                      <li className="list-group-item" key={index}>- {point ? point : 'Work in progress'}</li>
+                    ))}
+                  </ul>
+                  <li className="font-weight-bold" style={{ fontWeight:"bold" }}>Ataque</li>
+                  <ul className="list-inline">
+                    {atcPointsConsider.map((point, index) => (
+                      <li className="list-group-item" key={index}>- {point ? point : 'Work in progress'}</li>
+                    ))}
+                  </ul>
+                </ul>
+              </div>
             </Col>
-            <Col className="secondColumn col-4">
-              <h3>Jugadors Clau</h3>
-              {firstThreePlayers?.map((player) => (
-                <PlayerStats key={player.uuid} player={player} />
-              ))}
+            <Col className="col-4" style={secondColumn}>
+              <h3 style={titleStyle}>Jugadors Clau:</h3>
+              {firstThreePlayers?.map((player) => {
+
+                const playerImage = team.players?.find((p) => p.id === player.dorsal)?.photo;
+                const playerImportant = team.players?.find((p) => p.id === player.dorsal)?.important || [];
+                const [tip1, tip2, tip3] = playerImportant;
+
+                return (
+                  <PlayerStats
+                    key={player.uuid}
+                    player={player}
+                    playerImage={playerImage}
+                    tip1={tip1}
+                    tip2={tip2}
+                    tip3={tip3}
+                  />
+                );
+              })}
             </Col>
             <Col className="thirdColumn col-4">
-              <h3>Resta de jugadors</h3>
+              <h3 style={titleStyle}>Jugadors importants:</h3>
+              {secondaryPlayers?.map((player) => {
+
+                const playerImage = team.players?.find((p) => p.id === player.dorsal)?.photo;
+                const playerImportant = team.players?.find((p) => p.id === player.dorsal)?.important || [];
+                const [tip1, tip2, tip3] = playerImportant;
+
+                return (
+                  <PlayerStats
+                    key={player.uuid}
+                    player={player}
+                    playerImage={playerImage}
+                    tip1={tip1}
+                    tip2={tip2}
+                    tip3={tip3}
+                  />
+                );
+              })}
+              <div>
+                <h3 style={{...titleStyle}}>Videos:</h3>
+              </div>
+              {videos.map((video) => (
+                <div style={{ ...whiteBackground, display: 'inline-block' }} key={video.id}>
+                  <a href={video.url} target="_blank" rel="noopener noreferrer">
+                    {video.title}
+                  </a>
+                </div>
+              ))}
             </Col>
           </Row>
         </div>

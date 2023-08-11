@@ -11,7 +11,7 @@ const Login = ({ onLogin }) => {
     // Aquí puedes realizar la lógica de autenticación, por ejemplo, enviar una solicitud al servidor
     // Si la autenticación es exitosa, llama a la función onLogin para indicar que el usuario ha iniciado sesión
     // y redirigirlo a la página protegida.
-    if ((username === 'martiroget' || username === 'miquellopez' || username === 'edusabater') && password === 'manelesdeu') {
+    if ((username === 'martiroget' || username === 'miquellopez' || username === 'edusabater' || username === 'miguelangel') && password === 'manelesdeu') {
       onLogin();
       navigate('/'); // Redirige al usuario a la página principal después de iniciar sesión
     } else {

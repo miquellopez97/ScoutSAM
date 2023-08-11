@@ -11,10 +11,10 @@ const GeneralShoots = ({ team }) => {
   return (
     <div className="container-fluid" style={{width:"70em"}}>
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-5">
           <div className="card shadow">
             <div className="card-body">
-              <div className="d-flex justify-content-around mb-3">
+              <div className="d-flex justify-content-around mb-0">
                 <CircleInfo avg={avg1} number1={team.sumShotsOfOneSuccessful} number2={team.sumShotsOfOneAttempted} text="TL" />
                 <CircleInfo avg={avg2} number1={team.sumShotsOfTwoSuccessful} number2={team.sumShotsOfTwoAttempted} text="T2" />
                 <CircleInfo avg={avg3} number1={team.sumShotsOfThreeSuccessful} number2={team.sumShotsOfThreeAttempted} text="T3" />
