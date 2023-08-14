@@ -30,7 +30,7 @@ const GeneralData = ({team, whiteBackground}) => {
         justifyContent: "center",
         maxWidth: "40em",
         textAlign: "center",
-        margin: "0.5em 0em",
+        margin:'0.4em 0em'
       }}
     >
       <div style={positionSize}>
@@ -50,7 +50,7 @@ const GeneralData = ({team, whiteBackground}) => {
           marginRight: "1em",
         }}
       />
-      <p style={{ ...whiteBackground, ...avgFontSize }}>
+      <p style={{ ...whiteBackground, ...avgFontSize, margin:"0.5em", maxWidth:"11em" }}>
         {team.name}
         <br />
         AVERAGE - {team.avg ? `(${team.avg})` : `(0)`}

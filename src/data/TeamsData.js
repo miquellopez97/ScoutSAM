@@ -3,7 +3,13 @@ const teams = [
     { id: 54858, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', },
     { id: 55716, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg', },
     { id: 55671, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', },
-    { id: 54305, name: 'INTERSPORT - SAMÀ VILANOVA SAM', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', },
+    { id: 54305, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
+        videos:[
+            {id: 0, title:'VS Salou 20/11/2022', url: 'https://www.youtube.com/watch?v=pYxlsnQP5v8'},
+            {id: 1, title:'VS Salou 25/03/2023' ,url: 'https://www.youtube.com/watch?v=2nXIB3pk7cU'},
+            {id: 2, title:'VS Prat 07/05/2023', url: 'https://www.youtube.com/watch?v=j47B5Ld9Gm4'},
+        ]
+    },
     { id: 55164, name: 'C.B GRUP BARNA A', color1: "#E20613", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/J3ep8jvfPjFFzvxy.png',
         players: [
             { id: 3, important: ['3-and-D', 'Manos muy activas "Deflections"', 'Puede jugar de 3-4-5']},
@@ -21,9 +27,9 @@ const teams = [
             atc: ['Varies amenaces ofensives', 'En moments finals esta molt marcat que tirara', 'Molt rapits al contraatac']
         },
         videos:[
-            {id: 0, title:'Sedis Vs Barna (Senior A)' ,url: 'https://youtu.be/J-nUohJzPWM'},
-            {id: 1, title:'Barna Vs Escolapis (Senior A)' ,url: 'https://youtu.be/tnOQpnRDw1U'},
-            {id: 2, title:'Barna Vs Escolapis (Senior A)' ,url: 'https://youtu.be/tnOQpnRDw1U'}
+            {id: 0, title:'Sedis Vs Barna' ,url: 'https://youtu.be/J-nUohJzPWM'},
+            {id: 1, title:'Barna Vs Escolapis' ,url: 'https://youtu.be/tnOQpnRDw1U'},
+            {id: 2, title:'Barna Vs Escolapis' ,url: 'https://youtu.be/tnOQpnRDw1U'}
         ]
     },
     { id: 53780, name: 'C.B. PRAT', color1: "#19A1DA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/I2SPExEujKkx9zzD.png', },

@@ -93,7 +93,7 @@ const TeamStats = () => {
                   />
                 </Link>
               </div>
-              <div style={{margin:'-0.2em'}}>
+              <div style={{margin:'-1em 0em'}}>
                 <h3 style={titleStyle}>Dades generals:</h3>
                 <div style={{ display: 'flex' }}>
                   <div className='generalShoots'>
@@ -105,9 +105,9 @@ const TeamStats = () => {
                   <div style={{ padding:"0em 1em", margin:"-3em 0em 0.5em" }}>
                     <h3 style={titleStyle}>Videos:</h3>
                     {videos.map((video) => (
-                      <div style={{ ...whiteBackground, display: 'inline-block' }} key={video.id}>
+                      <div style={{ ...whiteBackground, display: 'inline-block', padding:"0.6em" }} key={video.id}>
                         <a href={video.url} target="_blank" rel="noopener noreferrer">
-                          Video {video.id}
+                          {video.title}
                         </a>
                       </div>
                     ))}
@@ -115,7 +115,7 @@ const TeamStats = () => {
                 </div>
               </div>
               <GeneralData team={team} whiteBackground={whiteBackground}/>
-              <div style={{margin:'-0.2em'}}>
+              <div style={{margin:'-0.1em 0em'}}>
                 <h3 style={titleStyle}>Claus del partit:</h3>               
                 {gameTips.map((point, index) => (
                   <p style={{ ...whiteBackground, display: 'inline-block', margin:'0.1em 0em' }} key={index}>{point ? `- ${point}` : '-Work in progress'}</p>
