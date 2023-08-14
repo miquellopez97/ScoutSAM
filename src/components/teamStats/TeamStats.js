@@ -6,6 +6,7 @@ import PlayerStats from '../playerStats/playerStats';
 import { Row, Col } from 'react-bootstrap';
 import GeneralShoots from '../generalShoots/GeneralShoots';
 import { desaturateColor } from '../../helper/colors';
+import GeneralData from '../generalData/GeneralData';
 
 const TeamStats = () => {
   const { teamName } = useParams();
@@ -64,22 +65,13 @@ const TeamStats = () => {
     fontWeight: 'bold',
   };
 
-  const specificFontSize = {
-    fontSize: '1.4em', // Tamaño de fuente específico para este h4
-  };
-
-  const secondColumn = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'baseline'
-  };
-
   //Add Claus del partit
   const gameTips = team.tips?.map(tip => tip.toLocaleUpperCase()) || [];
 
   //Add Punts a tenir en compte
-  const defPointsConsider = team.pointsConsider.def?.map(tip => tip) || [];
-  const atcPointsConsider = team.pointsConsider.atc?.map(tip => tip) || [];
+  const defPointsConsider = team.pointsConsider?.def?.map(tip => tip) || [];
+
+  const atcPointsConsider = team.pointsConsider?.atc?.map(tip => tip) || [];
 
   //Add videos
   const videos = team.videos?.map(video => video) || [];
@@ -101,26 +93,32 @@ const TeamStats = () => {
                   />
                 </Link>
               </div>
-              <div>
+              <div style={{margin:'-0.2em'}}>
                 <h3 style={titleStyle}>Dades generals:</h3>
-                <GeneralShoots team={data.team}/>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", maxWidth: "25em", textAlign: "center", margin: "1em auto" }}>
-                  <img
-                    src={team.teamPhoto}
-                    alt={team.name}
-                    style={{ width: '8em', height: '8em', display: 'block', margin: '0 auto', borderRadius: '10%', marginRight: '1em' }}
-                  />
-                  <p style={{ ...whiteBackground, ...specificFontSize }}>
-                    {team.name}
-                    <br />
-                    AVERAGE - {team.avg ? `(${team.avg})` : `(0)`}
-                  </p>
+                <div style={{ display: 'flex' }}>
+                  <div className='generalShoots'>
+                    <GeneralShoots team={data.team} />
+                  </div>
+                  <div style={{ margin:"0em -23em" }} >
+                    {/* Este div vacío puede usarse para crear un espacio entre los dos divs */}
+                  </div>
+                  <div style={{ padding:"0em 1em", margin:"-3em 0em 0.5em" }}>
+                    <h3 style={titleStyle}>Videos:</h3>
+                    {videos.map((video) => (
+                      <div style={{ ...whiteBackground, display: 'inline-block' }} key={video.id}>
+                        <a href={video.url} target="_blank" rel="noopener noreferrer">
+                          Video {video.id}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div>
+              <GeneralData team={team} whiteBackground={whiteBackground}/>
+              <div style={{margin:'-0.2em'}}>
                 <h3 style={titleStyle}>Claus del partit:</h3>               
                 {gameTips.map((point, index) => (
-                  <p style={{ ...whiteBackground, display: 'inline-block' }} key={index}>{point ? `- ${point}` : '-Work in progress'}</p>
+                  <p style={{ ...whiteBackground, display: 'inline-block', margin:'0.1em 0em' }} key={index}>{point ? `- ${point}` : '-Work in progress'}</p>
                 ))}
               </div>
               <div>
@@ -141,11 +139,10 @@ const TeamStats = () => {
                 </ul>
               </div>
             </Col>
-            <Col className="col-4" style={secondColumn}>
+            <Col className="col-4">
               <h3 style={titleStyle}>Jugadors Clau:</h3>
               {firstThreePlayers?.map((player) => {
 
-                const playerImage = team.players?.find((p) => p.id === player.dorsal)?.photo;
                 const playerImportant = team.players?.find((p) => p.id === player.dorsal)?.important || [];
                 const [tip1, tip2, tip3] = playerImportant;
 
@@ -153,7 +150,6 @@ const TeamStats = () => {
                   <PlayerStats
                     key={player.uuid}
                     player={player}
-                    playerImage={playerImage}
                     tip1={tip1}
                     tip2={tip2}
                     tip3={tip3}
@@ -165,7 +161,6 @@ const TeamStats = () => {
               <h3 style={titleStyle}>Jugadors importants:</h3>
               {secondaryPlayers?.map((player) => {
 
-                const playerImage = team.players?.find((p) => p.id === player.dorsal)?.photo;
                 const playerImportant = team.players?.find((p) => p.id === player.dorsal)?.important || [];
                 const [tip1, tip2, tip3] = playerImportant;
 
@@ -173,23 +168,12 @@ const TeamStats = () => {
                   <PlayerStats
                     key={player.uuid}
                     player={player}
-                    playerImage={playerImage}
                     tip1={tip1}
                     tip2={tip2}
                     tip3={tip3}
                   />
                 );
               })}
-              <div>
-                <h3 style={{...titleStyle}}>Videos:</h3>
-              </div>
-              {videos.map((video) => (
-                <div style={{ ...whiteBackground, display: 'inline-block' }} key={video.id}>
-                  <a href={video.url} target="_blank" rel="noopener noreferrer">
-                    {video.title}
-                  </a>
-                </div>
-              ))}
             </Col>
           </Row>
         </div>

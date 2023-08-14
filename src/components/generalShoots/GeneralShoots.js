@@ -11,7 +11,7 @@ const GeneralShoots = ({ team }) => {
   return (
     <div className="container-fluid" style={{width:"70em"}}>
       <div className="row">
-        <div className="col-lg-5">
+        <div className="col-lg-4">
           <div className="card shadow">
             <div className="card-body">
               <div className="d-flex justify-content-around mb-0">

@@ -53,7 +53,7 @@ const CircleInfo = ({ avg, number1, number2, text }) => {
         <circle cx="50" cy="50" r={radius} style={circleBorder} />
         <circle cx="50" cy="50" r={radius} style={circleFill} />
         <text x="50" y="30" style={textStyle}>{text}%</text>
-        <text x="50" y="50" style={textStyle}>{avg}%</text>
+        <text x="50" y="50" style={textStyle}>{isNaN(avg) ? 0 : avg}%</text>
         <text x="50" y="70" style={textStyle}>{number1}/{number2}</text>
       </svg>
     </div>
