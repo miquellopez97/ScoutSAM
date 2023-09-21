@@ -5,10 +5,22 @@ const teams = [
     { id: 55671, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', },
     { id: 54305, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
         videos:[
-            {id: 0, title:'VS Salou 20/11/2022', url: 'https://www.youtube.com/watch?v=pYxlsnQP5v8'},
+            {id: 0, title:'Scout', url: 'https://youtu.be/V2DBOa8mLL8'},
             {id: 1, title:'VS Salou 25/03/2023' ,url: 'https://www.youtube.com/watch?v=2nXIB3pk7cU'},
             {id: 2, title:'VS Prat 07/05/2023', url: 'https://www.youtube.com/watch?v=j47B5Ld9Gm4'},
-        ]
+        ],
+        players: [
+            { id: 10, important: ['Nomes tira, apretar el verde', 'Gordo, atacar 1 c 1', 'Puede jugar de 3-4-5']},
+            { id: 5, important: ['Tir sobre bot i rapid al primer bot', 'Li agrada fer flopping', 'Apretar el canvi de ma per devant']},
+            { id: 13, important: ['Pivot molt fisic i mobil ', 'Dur interiorment pot fer mal, donem fons!!', 'Treu moltes faltes, atens en ficar mans']},
+            { id: 18, important: ['Penetrador', 'Tira be de 3', 'Generador ofensiu']}
+        ],
+        secondary: [10],
+        tips: ['Defensa colectiva verde + 2c1 sense faltes', 'Controlar rebot', 'Pilota fluida i trobem avantatges'],
+        pointsConsider: {
+            def: ['Atac passa per 5 18 i 13', 'Balanç defensiu, molts atacs en menys de 8`', 'Focus al 2 c 1 al poste, anticipar-se!'],
+            atc: ['Castigar els BI "persegueixen"', 'Intentar corre + granada', 'Atacar als interiors grans']
+        },
     },
     { id: 55164, name: 'C.B GRUP BARNA A', color1: "#E20613", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/J3ep8jvfPjFFzvxy.png',
         players: [
