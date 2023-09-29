@@ -27,7 +27,7 @@ const TeamStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = 'https://msstats.optimalwayconsulting.com/v1/fcbq/team-stats/team/'+ team.id +'/season/2022';
+        const url = 'https://msstats.optimalwayconsulting.com/v1/fcbq/team-stats/team/'+ team.id +'/season/2023';
         const response = await axios.get(url);
         setData(response.data);
         setLoading(false);
