@@ -45,7 +45,24 @@ const teams = [
             {id: 2, title:'Barna Vs Escolapis' ,url: 'https://youtu.be/tnOQpnRDw1U'}
         ]
     },
-    { id: 60746, name: 'C.B. PRAT', color1: "#19A1DA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/I2SPExEujKkx9zzD.png', },
+    { id: 60746, name: 'C.B. PRAT', color1: "#19A1DA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/I2SPExEujKkx9zzD.png', 
+        players: [
+            { id: 13, important: ['FICA NOMES DE 3 i de TL, MINIM ESPAI DE 3 el cascara.', 'Molt lent al balanç, 5 ha de correr molt la pista', `Sempre finta, aguanta el 1c1 amb braç aixecat`]},
+            { id: 15, important: ['Enorme i gordo, correr molt be per lo gran que es', 'Defensant es vago, podem fer molt mal', 'Pot tirar, tot i que te bon 1x1 i pot postejar.']},
+            { id: 7, important: ['Bona arrancada, posteja molt bé i fa mal a dins si posteja', 'Pivot Fisic, pot tirar de 3', 'Sera important pararlo, i saltar al 2 amb verde']},
+            { id: 2, important: ['Intimida, bloqueja, juga 1x1 i correr el camp', '3/4 MOLT FISIC', 'No es bo tecnicament']},
+            { id: 12, important: ['Juega de 1/2', 'Base pot tirar, genera molt, bon cap i corra la pista', 'Fica els seus 7/8 de normal pero genera moltissim']},
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/msY6fdDNZF8'}
+        ],
+        secondary: [2,12],
+        tips: ['Defensar per correr (ADN SAM, trobar o generar avantatges arribant)', 'CONTROLAR REBOT sobretot petits', 'Tenir clar i executar scouting!'],
+        pointsConsider: {
+            def: ['Boronat push o canvi mai sol', 'Laterals blue centrals verde/push', 'Agressius 2c1 sota aro amb missmatch interior', '5 al rebot defensiu'],
+            atc: ['correr i generar arribant', 'atacar oberts per generar i treure faltes als interiors', 'fluidesa de la pilota i joc sense pilota']
+        },
+        avg: [0]},
     { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
         players: [
@@ -61,7 +78,7 @@ const teams = [
             def: ['Tothom va al rebot, IMPORTANT!', 'Balanç defensiu, molts atacs en menys de 8`', 'Focus al 2 c 1 al poste, anticipar-se!'],
             atc: ['Intentar corre + granada', 'Atents a mismatch amb el 30', 'Castigar la seva segona rotacio']
         },
-        avg: [0]
+        avg: [18]
     },
     { id: 62041, name: 'LLUÏSOS DE GRÀCIA A', color1: "#2B2E83", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/7cq1nU01cKlPql82.png',},
     { id: 61421, name: 'BC TECLA SALA', color1: "#EC555E", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/5AsR5hKTUyiMZ9Kk.png', },
