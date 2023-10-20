@@ -46,7 +46,8 @@ const TeamStats = () => {
     return <div>Equipo no encontrado</div>;
   }
 
-  const firstThreePlayers = data.players?.slice(0, 3);
+  //Modificar a 3
+  const firstThreePlayers = data.players?.slice(0, 2);
   const secondaryPlayers = team.secondary ? data.players?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
 
   const titleStyle = {
