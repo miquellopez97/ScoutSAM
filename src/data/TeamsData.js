@@ -20,7 +20,26 @@ const teams = [
         avg: [0]
     },
     { id: 60985, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', },
-    { id: 61254, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg', },
+    { id: 61254, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg',
+        videos:[
+            {id: 0, title:'Scout', url: 'https://www.youtube.com/watch?v=rHRCy6LWQTc'},
+        ],
+        players: [
+            { id: 5, important: ['Decantar a esquerra, te bon tir de 3', 'No li agrada defensar', 'Si apretem i no li surten les coses, es pica']},
+            { id: 14, important: ['Tambe es molt de dretes', 'Molt lent en defensa, no corre', 'Controlar accions de rebot defensiu nostre']},
+            { id: 4, important: ['Tira poc, pero anota', 'Jugador molt fisic, explosiu al primer pas', 'Apreta molt en defensa sobretot linies de pase']},
+            { id: 17, important: ['Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre']},
+            { id: 7, important: ['Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre'],},
+            { id: 15, important: ['Jugador molt fisic', 'Molta capacitat atletica, corre molt', '25 minuts si Alex Olive no juga'],}
+        ],
+        secondary: [4, 17, 11],
+        tips: ['Defensar per correr (ADN Barna)', 'Press tota pista', 'Responsabilitat individual 1 c 1'],
+        pointsConsider: {
+            def: ['Defensa 1 c 1', 'Decantar esquerre jugadors indicats', 'Controlar rebot defensiu'],
+            atc: ['Velocitat de la pilota', 'Correr a contraatac', 'Llegir avantatges']
+        },
+        avg: [0]
+    },
     { id: 61887, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', },
     { id: 62284, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
         videos:[
