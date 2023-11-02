@@ -17,7 +17,7 @@ const teams = [
             def: ['Velocitat de la pilota', 'Correr a contraatac', 'Llegir avantatges'],
             atc: ['Si no fiquen, no pressionen', 'Verde tot ross/ Gris(flash) Dani', 'Possible rosa / Puño']
         },
-        avg: [0]
+        avg: [13]
     },
     { id: 60985, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', },
     { id: 61254, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg',
@@ -38,7 +38,7 @@ const teams = [
             def: ['Defensa 1 c 1', 'Decantar esquerre jugadors indicats', 'Controlar rebot defensiu'],
             atc: ['Velocitat de la pilota', 'Correr a contraatac', 'Llegir avantatges']
         },
-        avg: [0]
+        avg: [12]
     },
     { id: 61887, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', },
     { id: 62284, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
@@ -100,7 +100,7 @@ const teams = [
             def: ['Boronat push o canvi mai sol', 'Laterals blue centrals verde/push', 'Agressius 2c1 sota aro amb missmatch interior', '5 al rebot defensiu'],
             atc: ['correr i generar arribant', 'atacar oberts per generar i treure faltes als interiors', 'fluidesa de la pilota i joc sense pilota']
         },
-        avg: [0]},
+        avg: [-6]},
     { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
         players: [
@@ -119,7 +119,26 @@ const teams = [
         avg: [18]
     },
     { id: 62041, name: 'LLUÏSOS DE GRÀCIA A', color1: "#2B2E83", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/7cq1nU01cKlPql82.png',},
-    { id: 61421, name: 'BC TECLA SALA', color1: "#EC555E", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/5AsR5hKTUyiMZ9Kk.png', },
+    { id: 61421, name: 'BC TECLA SALA', color1: "#EC555E", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/5AsR5hKTUyiMZ9Kk.png', 
+        players: [
+            { id: 1, important: ['Pressiona moolt i roba boles', 'Rapid a 1x1, DEIXEM DISTNACIA!!!', 'Juga a postejar bases i ho fa molt be.']},
+            { id: 3, important: ['Pressiona molt i es molt rapid donem moltes distancia)', 'Prefereix anar a dretes.', `Deixem distancia (Tira pero penetrant es una bestia)`]},
+            { id: 7, important: [`Tio com giannis fisicament, 0 control d'emocions`, 'No fica pero no limporta tirar, molt dur a rebot', 'Penetra molt be, DONEM DISTANCIA!!!']},
+            { id: 8, important: ['Pot tirar...5/13 T2 i 12/25 de 2', 'Exterior alt, atents a rebot', 'Bon penetrador i intens en defensa']},
+            { id: 12, important: ['"12(4) i 33(5)" Interiors de rol', 'Postes desquena i rebots', 'Res de laltre mon pero els hem de parar.']},
+            { id: 14, important: ['Fara mal al rebot, a rolls, penetracions i condicionara tirs', 'Penetra molt dur i no tira, defensem a 1,5 m','MOLT FISIC, MOLT REBOT controlar rebot defensiu!!!']},
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=Aw6-lcSJC68'}
+        ],
+        secondary: [8,12, 14],
+        tips: ['Si no ens fiquen, no ens poden pressionar.', 'Defensem amb disntancia i agafem el rebot defensiu', 'En atac, tenim missmatchos i podem correr'],
+        pointsConsider: {
+            def: ['TANCARNOS DINS + AGAFAR REBOT DEFENSIU', 'BD: Plan A: Push + tercers. Plan B: verde o flash', 'Zona: Puño + Rosa + enganyar primeres possessions amb 2-3'],
+            atc: ['Passar press amb fintes!!!! + passe enrere a sacador (2 es queda)', 'Missmatch de mostes i datac des de fora + si arribem amb caos i sense avantatge, juguem llegandos', 'Segona part van a defenses agressives (llegando sense esquina)']
+        },
+        avg: [0]
+    },
     { id: 61299, name: 'CB CASTELLBISBAL A', color1: "#4D2770", color2: "#F1EE37", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/c31e6a175665dc07.jpg', },
     { id: 61931, name: 'TRIOMF - UB MIR', color1: "#77A6E5", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QZX7sPueYyi2yucA.png', },
     { id: 60703, name: 'C.E SANT NICOLAU A', color1: "#B52735", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QMwEBbIfGNt6R8l1.jpg', }

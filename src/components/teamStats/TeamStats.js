@@ -48,7 +48,7 @@ const TeamStats = () => {
 
   const firstThreePlayers = data.players?.slice(0, 3);
   let secondaryPlayers = team.secondary ? data.players?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
-  secondaryPlayers = secondaryPlayers.slice(0, 2);
+  secondaryPlayers = secondaryPlayers.slice(0, 3);
 
   const titleStyle = {
     margin: '0.5em 0 0.2em',
