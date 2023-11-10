@@ -140,7 +140,26 @@ const teams = [
         avg: [0]
     },
     { id: 61299, name: 'CB CASTELLBISBAL A', color1: "#4D2770", color2: "#F1EE37", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/c31e6a175665dc07.jpg', },
-    { id: 61931, name: 'TRIOMF - UB MIR', color1: "#77A6E5", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QZX7sPueYyi2yucA.png', },
+    { id: 61931, name: 'TRIOMF - UB MIR', color1: "#77A6E5", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QZX7sPueYyi2yucA.png', 
+        players: [
+            { id: 34, important: ['Exterior pot tirar y pentrar, molt bon primer bot', 'Molt rapid al balanç, corre molt', `Li estan constant els tirs lliures`]},
+            { id: 8, important: ['Pivot molt gran i gordo, si esta sol tira', `Qui l'ataqui a de correr tota l'estona i atacar`, 'Aguantar el contacte i no creure fintes']},
+            { id: 89, important: ['Interior 4/5 es gran, no fica tirs lliures', 'Ens hem de tencar posteja i reparteix joc', `No va jugar l'ultim partit`]},
+            { id: 7, important: ['Nomes porta un partit jugat, 3/9 en triples!', 'Es un 4/5 poc mobil, estil boronat', 'Prefereix jugar per fora i no postejar']},
+            { id: 25, important: ['Altre interior gran', 'El podem atacar des de fora', `Atents al rebot`]},
+            { id: 2, important: ['Exterior gran, fisic similar a casas', 'Penetra i pot tirar de mitja distancia', `El podem atacar`]}
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/uyB7wo9tKN4'}
+        ],
+        secondary: [2, 7,89],
+        tips: ['Juguen molt al joc interior i tirs de mitja distancia', `CONTROLAR REBOT!!! Viuen d'aixo`, 'Baixar al balanç, els petits corren molt', 'Partit estil Tarrega, atacar des de fora i controlar rebot'],
+        pointsConsider: {
+            def: ['Defensa al poste baix Ross->Per devant', 'Controlar el joc interior i les pilotes interiors', 'Controlar el balanç defensiu', 'Controlar rebot ofensiu'],
+            atc: ['Detectar missmatch amb jugadors grans', 'Atacar al gordo des de fora', 'Fluidesa de la pilota i joc sense pilota']
+        },
+        avg: [0]
+    },
     { id: 60703, name: 'C.E SANT NICOLAU A', color1: "#B52735", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QMwEBbIfGNt6R8l1.jpg', }
 ];
 
