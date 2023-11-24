@@ -139,7 +139,26 @@ const teams = [
         },
         avg: [0]
     },
-    { id: 61299, name: 'CB CASTELLBISBAL A', color1: "#4D2770", color2: "#F1EE37", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/c31e6a175665dc07.jpg', },
+    { id: 61299, name: 'CB CASTELLBISBAL A', color1: "#4D2770", color2: "#F1EE37", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/c31e6a175665dc07.jpg',
+        players: [
+            { id: 5, important: [`Aler, molt alt i fort`, 'Li agrada penetrar i tirar de mitja distancia', `Atents al balanç, li agrada corre`]},
+            { id: 17, important: ['Ala pivot, gordo, el podem atacar', `Tira el mateix de 3 que de 2`, 'El podem apretar en defensa']},
+            { id: 8, important: [`Juga de base i escolta`, 'Tira poc pero anota', `Altre base veterano, genera pero podem atacarlo`]},
+            { id: 27, important: ['Juga de 5, tirador no anotador', 'Els tirs lliures si que fica', 'El podem atacar des de fora']},
+            { id: 10, important: ['Un altre interior', `No fica tirs lliures`, `Fa be la seva feina, 7 pts de mitja`]},
+            { id: 7, important: ['Escolta, molt rapid, pero no tira', 'Donar molta distancia', `Atents al balanç, li agrada corre`]}
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/7WPt5eWL0Z4'}
+        ],
+        secondary: [27, 10, 7],
+        tips: ['No tiran molt de 3, pero si de mitja distancia', 'No hi ha una estrella, tots sumen', 'Tenen clar el que han de fer i peguen molt', 'Encara que tinguin gent molt gran, els hi agrada corre'],
+        pointsConsider: {
+            def: ['Activitat en defensa, apretem als grans', 'Controlar balanç, els hi agrada corre', 'Controlar rebot defensiu, van els 5 al rebot'],
+            atc: ['Tindre clar aqui podem atacar amb mes facilitat', 'Veure opcions de missmatch que podem castigar', 'Corre es la primera opcio (ADN)']
+        },
+        avg: [0] 
+    },
     { id: 61931, name: 'TRIOMF - UB MIR', color1: "#77A6E5", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QZX7sPueYyi2yucA.png', 
         players: [
             { id: 34, important: ['Exterior pot tirar y pentrar, molt bon primer bot', 'Molt rapid al balanç, corre molt', `Li estan constant els tirs lliures`]},
