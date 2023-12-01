@@ -40,7 +40,26 @@ const teams = [
         },
         avg: [12]
     },
-    { id: 61887, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', },
+    { id: 61887, name: 'CB ÀGUILES - PLASFOC', color1: "#ECE53F", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/AXkvrDjxrBTjBZW7.jpg', 
+        videos:[
+            {id: 0, title:'Scout', url: 'https://youtu.be/SO57HkxA8-I?si=ct9AuYWNOnulvu4n'},
+        ],
+        players: [
+            { id: 5, important: ['Ex Leb Or, rol de vetera', 'No li agrada gens defensar', 'Buscara els seus tirs, sobretot en moments clau']},
+            { id: 9, important: ['Igual que el seu germa', 'Jugador molt complert', 'Pot tirar pero prefereix penetrar']},
+            { id: 8, important: ['Tipic pivot negre', `Viu de l'intimidació i d'agafar rebots`, 'No tira de 3']},
+            { id: 12, important: ['Juga de 4/5, tipic "pages" fort', 'Jugador molt complert, busca molt les fintes', 'Pot tirar pero prefereix penetrar']},
+            { id: 13, important: [`El shooter de l'equip`, `L'hem d'obligar a ficar pilota al terra`, `Busca el tir sobre bot`],},
+            { id: 44, important: [`Tipica gorda, pero amb algo de velocitat`, 'Defensa el bloc amb push o back', 'Carrega el rebot de fora com un porc senglar'],}
+        ],
+        secondary: [5, 8, 12],
+        tips: ['Defensar per correr (ADN Barna)', 'Llegir avantatges interiors i exteriors, sobretot si canvien', `Ser l'equip mes regular (alts i baixos curts)`],
+        pointsConsider: {
+            def: ['Velocitat al balanç, reaccio i velocitat', 'Atents el 1 c 2 al poste si cal', 'Bloqueig de rebot, els 5!'],
+            atc: ['Corre es la primera opció', 'Llegir la ventatge segons back o canvi']
+        },
+        avg: [0]
+},
     { id: 62284, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
         videos:[
             {id: 0, title:'Scout', url: 'https://youtu.be/V2DBOa8mLL8'},
