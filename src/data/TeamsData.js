@@ -19,7 +19,26 @@ const teams = [
         },
         avg: [13]
     },
-    { id: 60985, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', },
+    { id: 60985, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', 
+        players: [
+            { id: 5, important: [`Base molt rapid`,`No tira`,`Fa jugar a tothom`]},
+            { id: 6, important: [`Juga de 2, odia el contacte`,`El shooter de l'equip`,`Pot tirar sobre bot i de step back`]},
+            { id: 14, important: [`Juga de 2/3, fisic similar al 35`,`Molt actiu amb les mans defensan`,`Molt bon penetrador, te molts recursos`]},
+            { id: 23, important: [`Tipic interior negre`,`No destaca`,`Compleix en rebots i defensa`]},
+            { id: 29, important: [`Juga de 4, molt volum de tir de 3`,`No li agrada molt el contacte, al poste fa "Fadeaway"`,`Sempre farem verde, busca pop`]},
+            { id: 35, important: [`Juga de 2/3, defensa a tota pista molt be`, `Tira molt be de mitja distancia pero tambe penetra`, `Tambe pot tirar de 3, va a ratxes`]}
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/uyB7wo9tKN4'}
+        ],
+        secondary: [5, 23, 29],
+        tips: [`Defensar per correr (ADN Barna)`,`Tindre clar Blue o Verde`,`Controlar jugadors claus, tiradors no tiradors`],
+        pointsConsider: {
+            def: [`Defensar la linea exterior`,`Tindre clar conceptes de que tira i qui no`,`Tindre controlats 35, 14, 6 i 29`],
+            atc: [`Jugar a corre, jugar alegre`,`Que la pilota no es freni`]
+        },
+        avg: [0]
+    },
     { id: 61254, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg',
         videos:[
             {id: 0, title:'Scout', url: 'https://www.youtube.com/watch?v=rHRCy6LWQTc'},
@@ -59,7 +78,7 @@ const teams = [
             atc: ['Corre es la primera opció', 'Llegir la ventatge segons back o canvi']
         },
         avg: [0]
-},
+    },
     { id: 62284, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
         videos:[
             {id: 0, title:'Scout', url: 'https://youtu.be/V2DBOa8mLL8'},
@@ -119,7 +138,8 @@ const teams = [
             def: ['Boronat push o canvi mai sol', 'Laterals blue centrals verde/push', 'Agressius 2c1 sota aro amb missmatch interior', '5 al rebot defensiu'],
             atc: ['correr i generar arribant', 'atacar oberts per generar i treure faltes als interiors', 'fluidesa de la pilota i joc sense pilota']
         },
-        avg: [-6]},
+        avg: [-6]
+    },
     { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
         players: [
