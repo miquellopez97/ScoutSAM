@@ -13,6 +13,7 @@ const TeamStats = () => {
   const team = teamsData.find((team) => team.name.replace(/\s|\./g, '') === teamName);
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
+  const playersData = data.players || [];
 
   const desaturatedColor1 = desaturateColor(team.color1, 30);
   const desaturatedColor2 = desaturateColor(team.color2, 30);
@@ -46,9 +47,12 @@ const TeamStats = () => {
     return <div>Equipo no encontrado</div>;
   }
 
-  const firstThreePlayers = data.players?.slice(0, 3);
+  const filteredData = playersData.filter(jugador => !team.deletePlayers.includes(jugador.dorsal));
+
+  const firstThreePlayers = filteredData?.slice(0, 3);
   let secondaryPlayers = team.secondary ? data.players?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
-  secondaryPlayers = secondaryPlayers.slice(0, 3);
+  //Retocar a 3
+  secondaryPlayers = secondaryPlayers.slice(0, 4);
 
   const titleStyle = {
     margin: '0.5em 0 0.2em',

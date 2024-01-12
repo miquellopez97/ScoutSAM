@@ -140,7 +140,28 @@ const teams = [
         },
         avg: [-6]
     },
-    { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', },
+    { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', 
+        players: [
+            { id: 4, important: [`Escolta/Aler Shooter, nomes tira`,`Juga 20 minuts i surt a tirar`,` `]},
+            { id: 9, important: [`Pivot`,`Bon ratio pts/min`,`No es estrella, pero s'ha de tindre en compte`]},
+            { id: 10, important: [`Escolta/Aler ex EBA, molt fisic`,`No tira de 3`,`Si te el dia ens pot fer mal`]},
+            { id: 15, important: [`Pivot gran, poc movil`,`No tira triples`,`Es el jugador que rep mes pilotes, important rebot`]},
+            { id: 33, important: [`Ala pivot/pivot, `,`No li agrada contactar`,`No tira triples`]},
+            { id: 91, important: [`Base molt fisic`,`Penetra, pero pot tirar sobre bot`,`Molt intens, una paparra`]},
+            { id: 94, important: [`Base ex EBA, ha tirat el doble de 3 que de 2`,`Acaba d'arribar a l'equip nomes 6 partits`,`Treu bastantes faltes, ell tambe en fa 4 de mitja`]}
+        ],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/uyB7wo9tKN4'}
+        ],
+        secondary: [4,9,10,94],
+        tips: [`Shooters controlats #94 #4`,`Tindre controlars els punts a tindre en compte`],
+        pointsConsider: {
+            def: [`Plan A: Gris/Flash -> Obiols ajuda poc`,`Plan B: Verde/Canvi -> Ajudes poste, tiradors i reb`,`Plan C: Rosa -> Rebot, #94, #4 Shooters, Negar postes`],
+            atc: [`BD sense cantonada -> Pop/Slip`,`Spanish Pick&Roll -> 2`,`BD central -> Short roll + Esquina`, `BD des de cabeza -> Apareixo`, `Ross exterior si esta vs #15`, `Avantatge interior Samu vs canvi`]
+        },
+        deletePlayers: [12],
+        avg: [0]
+    },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
         players: [
             { id: 1, important: ['No te problema en fer un coast to coast si agafa rebot', 'Jove amb talent i clase', 'Es un base shooter, que no enganyi el percentatge']},
