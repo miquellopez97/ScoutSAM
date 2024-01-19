@@ -178,7 +178,29 @@ const teams = [
         },
         avg: [18]
     },
-    { id: 62041, name: 'LLUÏSOS DE GRÀCIA A', color1: "#2B2E83", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/7cq1nU01cKlPql82.png',},
+    { id: 62041, name: 'LLUÏSOS DE GRÀCIA A', color1: "#2B2E83", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/7cq1nU01cKlPql82.png',
+        videos:[
+            {id: 0, title:'Scout', url: 'https://www.youtube.com/watch?v=i3j4W1Bq550'},
+        ],
+        players: [
+            { id: 14, important: ['Pivot, Millor interior pasador', 'Creuat fa moltes faltes, ataqueulo i correu', 'Atents al rebot']},
+            { id: 2, important: ['Escolta, Base ex EBA 1,95m', 'Pot tirar i penetrar', 'Es creu facil, molt ego']},
+            { id: 4, important: ['Base electric', 'No li entren els tirs', 'Molt  bon penetrador']},
+            { id: 7, important: ['Pivot calvo gran, molta experiencia', 'Bon passador i bon rebot', `L'hem de corre i atacar-lo`]},
+            { id: 0, important: ['Base Shooter i electric', 'Anotador', 'Nomes porta un partit']},
+            { id: 15, important: ['Base principal', 'Corre molt be al contraatac', 'Bon tirador i penetrador']},
+            { id: 25, important: ['Aler tipu Pau', 'Molt fisic per ser un aler', 'Corre molt be el contraatac i carrega rebot']},
+            { id: 30, important: ['Pivot mes gran, pseudo movil', 'Genera i agafa rebot', 'No te esquerra', `L'hem d'atacar`]}
+        ],
+        secondary: [14, 30, 0, 2, 7],
+        tips: ['Defensar per correr (ADN Barna)', 'Tindre controlat els jugadors importants, tenen molts!', 'Controlar interiors, sobretot rebot'],
+        pointsConsider: {
+            def: ['Controlar tiradors', 'Bases molt rapid i electrics', 'Controlar els postes, sobretot a Rosa'],
+            atc: ['Velocitat de la pilota', 'Atacar als grans des de fora', 'Llegir avantatges']
+        },
+        deletePlayers: ["6edf1268-bfd2-496f-8466-10e56d95356e"],
+        avg: [12]
+    },
     { id: 61421, name: 'BC TECLA SALA', color1: "#EC555E", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/5AsR5hKTUyiMZ9Kk.png', 
         players: [
             { id: 1, important: ['Pressiona moolt i roba boles', 'Rapid a 1x1, DEIXEM DISTNACIA!!!', 'Juga a postejar bases i ho fa molt be.']},

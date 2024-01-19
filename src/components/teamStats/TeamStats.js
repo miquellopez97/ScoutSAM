@@ -47,12 +47,12 @@ const TeamStats = () => {
     return <div>Equipo no encontrado</div>;
   }
 
-  const filteredData = playersData.filter(jugador => !team.deletePlayers.includes(jugador.dorsal));
+  const filteredData = team.deletePlayers ? playersData.filter(jugador => !team.deletePlayers.includes(jugador.uuid)) : playersData;
 
   const firstThreePlayers = filteredData?.slice(0, 3);
-  let secondaryPlayers = team.secondary ? data.players?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
+  let secondaryPlayers = team.secondary ? filteredData?.filter(player => team.secondary.includes(player.dorsal)) || [] : [];
   //Retocar a 3
-  secondaryPlayers = secondaryPlayers.slice(0, 4);
+  secondaryPlayers = secondaryPlayers.slice(0, 5);
 
   const titleStyle = {
     margin: '0.5em 0 0.2em',
