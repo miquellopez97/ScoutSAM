@@ -199,7 +199,7 @@ const teams = [
             atc: ['Velocitat de la pilota', 'Atacar als grans des de fora', 'Llegir avantatges']
         },
         deletePlayers: ["6edf1268-bfd2-496f-8466-10e56d95356e"],
-        avg: [12]
+        avg: []
     },
     { id: 61421, name: 'BC TECLA SALA', color1: "#EC555E", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/5AsR5hKTUyiMZ9Kk.png', 
         players: [
