@@ -81,23 +81,23 @@ const teams = [
     },
     { id: 62284, name: 'INTERSPORT - SAMÀ VILANOVA', color1: "#792729", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/Vv7cjeivNKthPj6o.jpeg', 
         videos:[
-            {id: 0, title:'Scout', url: 'https://youtu.be/V2DBOa8mLL8'},
-            {id: 1, title:'VS Salou 25/03/2023' ,url: 'https://www.youtube.com/watch?v=2nXIB3pk7cU'},
-            {id: 2, title:'VS Prat 07/05/2023', url: 'https://www.youtube.com/watch?v=j47B5Ld9Gm4'},
+            {id: 0, title:'Scout', url: 'https://youtu.be/moqA4IKxpmU?si=PKtlu7PkV7lMYXch'}
         ],
         players: [
-            { id: 10, important: ['Nomes tira, apretar el verde', 'Gordo, atacar 1 c 1', 'Puede jugar de 3-4-5']},
-            { id: 5, important: ['Tir sobre bot i rapid al primer bot', 'Li agrada fer flopping', 'Apretar el canvi de ma per devant']},
-            { id: 13, important: ['Pivot molt fisic i mobil ', 'Dur interiorment pot fer mal, donem fons!!', 'Treu moltes faltes, atens en ficar mans']},
-            { id: 18, important: ['Penetrador', 'Tira be de 3', 'Generador ofensiu']}
+            { id: 10, important: ['Jugador clau, molt fisic, tira be de 3', 'Agafa molts rebots i pot castigar al poste', `Hem d'aconseguir que pentri en comptes de tirar`]},
+            { id: 5, important: ['Evitar que rebi facil, corre molt', `Tira molt, a l'ultim nomes va fer un 2/2`, 'Molt bon penetrador, treu un munt de faltes']},
+            { id: 23, important: ['Pivot, molt fisic i molt rebot ofensiu', 'Jugador molt alt i mobil', `L'hem de frenar i que no agafi rebots`]},
+            { id: 18, important: ['Molt fisic i penetrador', 'Pot tiar de fora, pero no es especialista', 'Mou be la bola i penetra']},
+            { id: 11, important: ['Tirador veterano', 'Atents! ficara en moments clau', `Si esta a pista l'hem d'atacar`]}
         ],
-        secondary: [10],
-        tips: ['Defensa colectiva verde + 2c1 sense faltes', 'Controlar rebot', 'Pilota fluida i trobem avantatges'],
+        secondary: [11, 18],
+        tips: ['Defensa colectiva verde + 2c1 al poste pel fons', 'Controlar rebot defensiu', 'Pilota fluida i trobem avantatges LIBRE'],
         pointsConsider: {
-            def: ['Atac passa per 5 18 i 13', 'Balanç defensiu, molts atacs en menys de 8`', 'Focus al 2 c 1 al poste, anticipar-se!'],
-            atc: ['Castigar els BI "persegueixen"', 'Intentar corre + granada', 'Atacar als interiors grans']
+            def: ['Atac passa per 5 10 i 23', 'Balanç defensiu, molts atacs en menys de 8`', 'Frenar el contraatac del numero 5, que no rebi facil'],
+            atc: ['Castigar els missmatch', 'Intentar corre ADN BARNA', 'Atacar als jugadors grans i veteranos']
         },
-        avg: [-33]
+        deletePlayers: ["6edf1268-bfd2-496f-8466-10e56d95356e"],
+        avg: []
     },
     { id: 62732, name: 'C.B GRUP BARNA A', color1: "#E20613", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/J3ep8jvfPjFFzvxy.png',
         players: [
