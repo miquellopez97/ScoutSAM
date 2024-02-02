@@ -164,18 +164,22 @@ const teams = [
     },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
         players: [
-            { id: 1, important: ['No te problema en fer un coast to coast si agafa rebot', 'Jove amb talent i clase', 'Es un base shooter, que no enganyi el percentatge']},
-            { id: 3, important: ['Sempre esta a 45 grays per buscar el seu tir', ' ', ' ']},
-            { id: 30, important: ['Pivot gran carrega el rebot ofensiu', 'Dur interiorment pot fer mal, sempre va a dretes', `Pateix al 1 c 1 des de 6'75, podem treure faltes`]},
-            { id: 8, important: ['Sempre carrega el rebot ofensiu, es molt fisic', 'El 0/14 es d-agafar rebots ofc i tornar a tirar', 'Pot tirar de fora']},
-            { id: 25, important: ['Jugador molt fisic', 'Pot tirar de fora', 'Molt rapid a camp sencer']}
+            { id: 10, important: ['Base, molt baixet tirador', `Li costa penetrar per l'alçada, tira de mitja`, `Als BD perseguim amb LILA!`]},
+            { id: 1, important: ['Base, era el bo pero ha perdut protagonisme', 'Treu faltes, es penetrador pero pot tirar', 'Si entra a partit ens pot fer mal']},
+            { id: 6, important: ['Pivot gran, molt gran, REBOT', 'Defensem LILA!', `Si esta a pista juguen per ell, pilota dins amb talls,etc...`, `Te bon tir de mitja`]},
+            { id: 9, important: ['Alapivot, tambe juga de 5', 'Juga sempre pop, finta pero pot tirar si esta sol', 'Fem VERDE!']},
+            { id: 8, important: ['Aler, fisic', 'No tira', 'Li agrada postejar i penetra be']}
         ],
-        secondary: [8,25],
-        tips: ['Controlar el rebot defensiu, Sama va generar 20 pts aixi', 'Compte amb les press i les zones', 'Pilota fluida i trobem avantatges'],
+        videos:[
+            {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=zFFDrB50F5w'}
+        ],
+        secondary: [9, 10],
+        tips: ['Controlar el rebot defensiu, Pivot i Aler molt gran', 'Tindre clar si es Lila o Verde', 'Pilota fluida i trobem avantatges'],
         pointsConsider: {
-            def: ['Tothom va al rebot, IMPORTANT!', 'Balanç defensiu, molts atacs en menys de 8`', 'Focus al 2 c 1 al poste, anticipar-se!'],
-            atc: ['Intentar corre + granada', 'Atents a mismatch amb el 30', 'Castigar la seva segona rotacio']
+            def: ['Tothom va al rebot, IMPORTANT!', 'Balanç defensiu, molts atacs en menys de 8`', ' '],
+            atc: ['Intentar corre + granada', 'Pilota fluida i trobem avantatges', ' ']
         },
+        deletePlayers: ['fffaea3f-98d0-11e9-a2a5-0216824770c2'],
         avg: [18]
     },
     { id: 62041, name: 'LLUÏSOS DE GRÀCIA A', color1: "#2B2E83", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/7cq1nU01cKlPql82.png',
