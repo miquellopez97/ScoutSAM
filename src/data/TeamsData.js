@@ -123,20 +123,20 @@ const teams = [
     },
     { id: 60746, name: 'C.B. PRAT', color1: "#19A1DA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/I2SPExEujKkx9zzD.png', 
         players: [
-            { id: 13, important: ['FICA NOMES DE 3 i de TL, MINIM ESPAI DE 3 el cascara.', 'Molt lent al balanç, 5 ha de correr molt la pista', `Sempre finta, aguanta el 1c1 amb braç aixecat`]},
-            { id: 15, important: ['Enorme i gordo, correr molt be per lo gran que es', 'Defensant es vago, podem fer molt mal', 'Pot tirar, tot i que te bon 1x1 i pot postejar.']},
-            { id: 7, important: ['Bona arrancada, posteja molt bé i fa mal a dins si posteja', 'Pivot Fisic, pot tirar de 3', 'Sera important pararlo, i saltar al 2 amb verde']},
-            { id: 2, important: ['Intimida, bloqueja, juga 1x1 i correr el camp', '3/4 MOLT FISIC', 'No es bo tecnicament']},
-            { id: 12, important: ['Juega de 1/2', 'Base pot tirar, genera molt, bon cap i corra la pista', 'Fica els seus 7/8 de normal pero genera moltissim']},
+            { id: 12, important: ['Base, bon tirador, tirador de ratxes', `Bon generador de l'equip, es el base director`]},
+            { id: 16, important: ['Base anotador', 'Bon tirador, rapid i corre molt, jugador electric', 'Tio molt baixet, com 0 de lluisos o 10 tarragona']},
+            { id: 15, important: ['Aler, juga BD i es molt gros', 'Tira sobre bot i en estatic', 'Tambe li agrada fintar dur fins a sota']},
+            { id: 2, important: ['Pivot negre, tipic pivot', 'No tira de fora, nomes acaba aprop de cistella', 'Atents al rebot i finalitzacions aprop']},
+            { id: 13, important: ['Boronat, no es pensa els tirs, cada tir que te el tira', 'Hi ha partits que fica molt de fora', 'Atents al Box to Box']},
         ],
         videos:[
-            {id: 0, title:'Scout' ,url: 'https://youtu.be/msY6fdDNZF8'}
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/h9ghgQ-qSGo'}
         ],
         secondary: [2,12],
         tips: ['Defensar per correr (ADN SAM, trobar o generar avantatges arribant)', 'CONTROLAR REBOT sobretot petits', 'Tenir clar i executar scouting!', 'Caracter!!!'],
         pointsConsider: {
-            def: ['Boronat push o canvi mai sol', 'Laterals blue centrals verde/push', 'Agressius 2c1 sota aro amb missmatch interior', '5 al rebot defensiu'],
-            atc: ['correr i generar arribant', 'atacar oberts per generar i treure faltes als interiors', 'fluidesa de la pilota i joc sense pilota']
+            def: ['Defensa del BD i del BI', 'Controlar rebot, els 5!'],
+            atc: ['Correr i generar arribant', 'Opcio de jugar Mano']
         },
         avg: [-6]
     },
