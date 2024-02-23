@@ -1,22 +1,23 @@
 const teams = [
     { id: 61781, name: 'SQUADRA PIZZA VEDRUNA GRÀCIA A', color1: "#91DB73", color2: "#000000",teamPhoto: 'https://www.basquetvedruna.cat/uploads/club/46b647c86b8f151b64ff4e90d7954ac1ed5a0895.jpg', 
         videos:[
-            {id: 0, title:'Scout', url: 'https://youtu.be/V2DBOa8mLL8'},
+            {id: 0, title:'Scout', url: 'https://youtu.be/pibzueb3e24'},
         ],
         players: [
-            { id: 2, important: ['1/2 molt vertical. Molt bon 1x1 tambe pot tirar de 3', 'Prefereix tirar mitja distancia sobre bot o penetrar', 'Paparra tota pista']},
-            { id: 1, important: ['1/2 veterano ( no ha jugat ultim partit)', 'Si te el dia et fa 20', 'Vertical 1x1 i pot tirar']},
-            { id: 3, important: ['Experiencia i juga inteligent', 'Jugador complet ', 'Esta fallant, pero tira be']},
-            { id: 7, important: ['Experiencia i juga inteligent', 'Jugador complet ', 'Esta fallant, pero tira be']},
-            { id: 10, important: ['No es molt alt, ni esta fort pero fa feina', 'Podem atacarlo de fora', 'Entre rebots bassura i roll y pops acaba amb uns 10'],},
-            { id: 15, important: ['Jugador molt fisic', 'Molta capacitat atletica, corre molt', '25 minuts si Alex Olive no juga'],}
+            { id: 1, important: ['Base, nomes tira', 'Si penetra, doble mes que finalitza', 'Atents en ajudar sent tirador']},
+            { id: 15, important: ['Escolta, corre el que no esta escrit', `Es molt bo penetrant en carrera`, `No tira de 3, l'hem de flotar`]},
+            { id: 8, important: ['Base, tira de mitja i penetra', 'Treu moltes faltes, atents fintes', 'Sol cambiar per sota + davant per trencar']},
+            { id: 14, important: ['Aler, jugador dur', 'Pot penetrar i tirar', 'Es fisic i rapid']},
+            { id: 11, important: [`Pivot, L'hem d'atacar!!!`, 'Atents al rebot', 'Pot tirar de mitja'],},
+            { id: 12, important: ['Aler, es desquicia molt facil', 'Buscara jugar molt de 1c1', 'Pot arribar a tirar, no es el seu fort'],}
         ],
-        secondary: [3, 10, 15],
+        secondary: [1, 11, 14],
         tips: ['Defensar per correr (ADN Barna)', 'Llegir avantatges interiors i exteriors', 'Ser lequip mes regular (alts i baixos curts)'],
         pointsConsider: {
-            def: ['Velocitat de la pilota', 'Correr a contraatac', 'Llegir avantatges'],
-            atc: ['Si no fiquen, no pressionen', 'Verde tot ross/ Gris(flash) Dani', 'Possible rosa / Puño']
+            atc: ['Velocitat de la pilota', 'Correr a contraatac', 'Atents a posibles zones rivals'],
+            def: ['Si no fiquen, no pressionen', `Verde tot i defensa d'ajudes`]
         },
+        deletePlayers: ['fc245b60-98d0-11e9-a2a5-0216824770c2'],
         avg: [13]
     },
     { id: 60985, name: 'AEC COLLBLANC - ÍTACA', color1: "#2E3351", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9n0TJ9sk258weu4P.jpg', 
