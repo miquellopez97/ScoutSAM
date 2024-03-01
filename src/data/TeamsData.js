@@ -42,18 +42,19 @@ const teams = [
     },
     { id: 61254, name: 'CN TARREGA A',color1: "#0072CA", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/gx4T0lYR3vNvFVXh.jpg',
         videos:[
-            {id: 0, title:'Scout', url: 'https://www.youtube.com/watch?v=rHRCy6LWQTc'},
+            {id: 0, title:'Scout', url: 'https://www.youtube.com/watch?v=-jp07bGM5eg'},
         ],
         players: [
-            { id: 5, important: ['Decantar a esquerra, te bon tir de 3', 'No li agrada defensar', 'Si apretem i no li surten les coses, es pica']},
-            { id: 14, important: ['Tambe es molt de dretes', 'Molt lent en defensa, no corre', 'Controlar accions de rebot defensiu nostre']},
-            { id: 4, important: ['Tira poc, pero anota', 'Jugador molt fisic, explosiu al primer pas', 'Apreta molt en defensa sobretot linies de pase']},
-            { id: 17, important: ['Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre']},
-            { id: 7, important: ['Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre'],},
-            { id: 15, important: ['Jugador molt fisic', 'Molta capacitat atletica, corre molt', '25 minuts si Alex Olive no juga'],}
+            { id: 5, important: ['Base, molt perillos al 1c1 sempre a dretes', 'Pot tirar de 3', 'Lila i de segons']},
+            { id: 14, important: ['Pivot, molt gran li agrada jugar a dins', `No tira de 3 i es lent, l'hem d'atacar`, 'Anarlo a buscar rapid i defensa 3/4']},
+            { id: 4, important: ['Base,Tira poc, pero anota', 'Jugador molt fisic, explosiu al primer pas', 'Apreta molt en defensa sobretot linies de pase']},
+            { id: 17, important: ['Aler, Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre']},
+            { id: 18, important: ['Aler, Molt fisic', 'Bon joc sense pilota, ajudes curtes', 'Controlar accions de rebot defensiu nostre'],},
+            { id: 8, important: ['Escolta-Base,Jugador molt fisic', 'Molta capacitat atletica, corre molt', '25 minuts si Alex Olive no juga'],},
+            { id: 44, important: ['Base, nomes dos partits', 'Esta molt fort, pero esta boig', 'Temporada anterior 10pts de mitja'],}
         ],
-        secondary: [4, 17, 11],
-        tips: ['Defensar per correr (ADN Barna)', 'Press tota pista', 'Responsabilitat individual 1 c 1'],
+        secondary: [18, 17, 8, 44],
+        tips: ['Venen de guanyar a lluisos de 10', 'Es la primera victoria en 5 partits'],
         pointsConsider: {
             def: ['Defensa 1 c 1', 'Decantar esquerre jugadors indicats', 'Controlar rebot defensiu'],
             atc: ['Velocitat de la pilota', 'Correr a contraatac', 'Llegir avantatges']
