@@ -249,23 +249,24 @@ const teams = [
     },
     { id: 61931, name: 'TRIOMF - UB MIR', color1: "#77A6E5", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QZX7sPueYyi2yucA.png', 
         players: [
-            { id: 34, important: ['Exterior pot tirar y pentrar, molt bon primer bot', 'Molt rapid al balanç, corre molt', `Li estan constant els tirs lliures`]},
+            { id: 34, important: ['Exterior pot tirar y pentrar, molt bon primer bot', 'Molt rapid al balanç, corre molt', `Guanyador concurs de mates de copa 2019`]},
             { id: 8, important: ['Pivot molt gran i gordo, si esta sol tira', `Qui l'ataqui a de correr tota l'estona i atacar`, 'Aguantar el contacte i no creure fintes']},
-            { id: 89, important: ['Interior 4/5 es gran, no fica tirs lliures', 'Ens hem de tencar posteja i reparteix joc', `No va jugar l'ultim partit`]},
-            { id: 7, important: ['Nomes porta un partit jugat, 3/9 en triples!', 'Es un 4/5 poc mobil, estil boronat', 'Prefereix jugar per fora i no postejar']},
-            { id: 25, important: ['Altre interior gran', 'El podem atacar des de fora', `Atents al rebot`]},
-            { id: 2, important: ['Exterior gran, fisic similar a casas', 'Penetra i pot tirar de mitja distancia', `El podem atacar`]}
+            { id: 14, important: ['Pivot, ja el coneixem tots', 'Fisic per descordinat, intimida penetracions', `Sera el seu tercer partit i esta motivat`]},
+            { id: 0, important: [`Base, estaba lesionat, no va jugar a l'anada`, 'No te grans percentatges de tir', 'Penetra molt be']},
+            { id: 25, important: ['Aler - AlaPivot, tirar no es el seu fort', 'El podem atacar des de fora', `Atents al rebot`]},
+            { id: 11, important: [`Exterior, a l'anada el vem flotar i va funcionar`, 'Ara esta en ratxa i anota de fora', `Ve de ficar 17 vs Lluisos i 16 vs Sant Boi`]}
         ],
         videos:[
-            {id: 0, title:'Scout' ,url: 'https://youtu.be/uyB7wo9tKN4'}
+            {id: 0, title:'Scout' ,url: 'https://youtu.be/Qz0HLrYZbTA'}
         ],
-        secondary: [2, 7,89],
-        tips: ['Juguen molt al joc interior i tirs de mitja distancia', `CONTROLAR REBOT!!! Viuen d'aixo`, 'Baixar al balanç, els petits corren molt', 'Partit estil Tarrega, atacar des de fora i controlar rebot'],
+        secondary: [0, 11, 14],
+        tips: ['Juguen molt al joc interior i tirs de mitja distancia', `CONTROLAR REBOT!!! Viuen d'aixo`, 'Baixar al balanç, els petits corren molt',`Hi ha 3-4 jugadors grans molt fisics, si hi ha canvi hem d'atacar`],
         pointsConsider: {
-            def: ['Defensa al poste baix Ross->Per devant', 'Controlar el joc interior i les pilotes interiors', 'Controlar el balanç defensiu', 'Controlar rebot ofensiu'],
+            def: ['Controlar el joc interior i les pilotes interiors', 'Controlar el balanç defensiu', 'Controlar rebot ofensiu'],
             atc: ['Detectar missmatch amb jugadors grans', 'Atacar al gordo des de fora', 'Fluidesa de la pilota i joc sense pilota']
         },
-        avg: [0]
+        avg: [13],
+        deletePlayers: ["fbb38a52-98d0-11e9-a2a5-0216824770c2"],
     },
     { id: 60703, name: 'C.E SANT NICOLAU A', color1: "#B52735", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QMwEBbIfGNt6R8l1.jpg',
         players: [
