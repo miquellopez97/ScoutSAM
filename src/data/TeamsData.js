@@ -270,23 +270,25 @@ const teams = [
     },
     { id: 60703, name: 'C.E SANT NICOLAU A', color1: "#B52735", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/QMwEBbIfGNt6R8l1.jpg',
         players: [
-            { id: 0, important: [`El shooter de l'equip`, 'De tirs de 2, porta 3/17, que boti!', `El podem buscar al poste`]},
+            { id: 0, important: [`El shooter de l'equip`, 'Baixa el percentatge si fica pilota al terra', `El podem buscar al poste`]},
             { id: 5, important: ['Si te el dia enchufa', `Bon penetrador i defensor intens`, 'El podem buscar al poste']},
             { id: 9, important: [`L'hem de buscar al poste`, 'Pot tirar de 3', `41 TL el que mes i amb un 60%`]},
-            { id: 17, important: ['Paparra maxima!!!', 'Reparteix joc i bon penetrador', 'No fica TL']},
+            { id: 17, important: ['Paparra maxima!!!', 'Reparteix joc i bon penetrador', 'Li agrada defensar tota la pista']},
             { id: 44, important: ['Pivot petit, no gaire movil, tampoc tira', `L'hem d'atacar`, `Jugar llegando sin esquina (Defensa back)`]},
-            { id: 98, important: ['No tira de 3, ataca de fora i busca el poste, AGUANTAR!!', 'Defensen el BD amb canvi, jugar amb 4 + poste', `Si rep al poste alt, donar espai, juga de poste passador`]}
+            { id: 11, important: ['AlaPivot / Pivot, Rebot ofensiu', `No tira de 3`, `Rapid a contraatac`]},
+            { id: 3, important: ['Escola, nomes surt a tirar', '0 TL en 8 partits', `El shooter del equip, ha arribat a tirar 12 en un partit`]}
         ],
         videos:[
             {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=aVXAbQ8S9r4'}
         ],
-        secondary: [0, 17, 44],
-        tips: ['Defensar per correr (ADN Barna)', 'Llegir aventatges interiors', 'Molta activitat defensiva als canvis'],
+        secondary: [0, 17, 44, 3],
+        tips: ['Defensar per correr (ADN Barna)', 'Llegir aventatges interiors', `Puntuació per quarts a l'anada`,`P1(14-16)`,`P2(20-21)`,`P3(32-15)`,`P4(16-23)`],
         pointsConsider: {
             def: ['Activitat en defensa, sobretot al canvi', 'Tindre controlats els tiradors'],
             atc: ['Tindre clar aqui es pot postejar', 'Atacar al pivot desde fora si hi ha opcio', 'Corre es la primera opcio (ADN)']
         },
-        avg: [0]
+        avg: [7],
+        deletePlayers: ["fbba9d08-98d0-11e9-a2a5-0216824770c2"],
     }
 ];
 

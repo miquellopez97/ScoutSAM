@@ -9,7 +9,7 @@ const GeneralShoots = ({ team }) => {
 
 
   return (
-    <div className="container-fluid" style={{width:"70em"}}>
+    <div className="container-fluid" style={{width:"80em"}}>
       <div className="row">
         <div className="col-lg-4">
           <div className="card shadow">
