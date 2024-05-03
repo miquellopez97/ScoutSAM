@@ -144,24 +144,21 @@ const teams = [
     },
     { id: 60972, name: 'BÀSQUET SANT BOI', color1: "#E45F0C", color2: "#000000", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/mMgPF0Eiki5hUdue.png', 
         players: [
-            { id: 4, important: [`Escolta/Aler Shooter, nomes tira`,`Juga 20 minuts i surt a tirar`,` `]},
-            { id: 9, important: [`Pivot`,`Bon ratio pts/min`,`No es estrella, pero s'ha de tindre en compte`]},
-            { id: 10, important: [`Escolta/Aler ex EBA, molt fisic`,`No tira de 3`,`Si te el dia ens pot fer mal`]},
-            { id: 15, important: [`Pivot gran, poc movil`,`No tira triples`,`Es el jugador que rep mes pilotes, important rebot`]},
-            { id: 33, important: [`Ala pivot/pivot, `,`No li agrada contactar`,`No tira triples`]},
-            { id: 91, important: [`Base molt fisic`,`Penetra, pero pot tirar sobre bot`,`Molt intens, una paparra`]},
-            { id: 94, important: [`Base ex EBA, ha tirat el doble de 3 que de 2`,`Acaba d'arribar a l'equip nomes 6 partits`,`Treu bastantes faltes, ell tambe en fa 4 de mitja`]}
+            { id: 8, important: [`Base, no es molt anotador`,`Juga molt i defensa intens`,`Genera i pasa, pot acabar amb 8/9 assist`]},
+            { id: 15, important: [`Pivot, força molts tirs`,`Defensem per devant i bloquejem rebot`,`L'hem d'atacar!!! Corre molt, es molt tosco`]},
+            { id: 10, important: [`Aler, entra molt dur cap a cistella`,`Pot tirar`,`Esta en bon estat de forma, es jugador estrella`]},
+            { id: 9, important: [`Alapivot/Pivot, jugador gran i amb tir`,`Defensem per devant i bloquejem rebot`,`Atents al pop!!!`]},
         ],
         videos:[
-            {id: 0, title:'Scout' ,url: 'https://youtu.be/uyB7wo9tKN4'}
+            {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=7p6RvgjrAPE'}
         ],
-        secondary: [4,9,10,94],
-        tips: [`Shooters controlats #94 #4`,`Tindre controlars els punts a tindre en compte`],
+        secondary: [8],
+        tips: [`Tant Mauro #10 com Bort poden tirar #9`],
         pointsConsider: {
-            def: [`Plan A: Gris/Flash -> Obiols ajuda poc`,`Plan B: Verde/Canvi -> Ajudes poste, tiradors i reb`,`Plan C: Rosa -> Rebot, #94, #4 Shooters, Negar postes`],
-            atc: [`BD sense cantonada -> Pop/Slip`,`Spanish Pick&Roll -> 2`,`BD central -> Short roll + Esquina`, `BD des de cabeza -> Apareixo`, `Ross exterior si esta vs #15`, `Avantatge interior Samu vs canvi`]
+            def: [`Control del rebot i defensa per devant a Unai #15`, `No deixar pensar al Gerard #8`],
+            atc: [`Atents al missmatch`]
         },
-        deletePlayers: [12],
+        deletePlayers: [`fbaee22d-98d0-11e9-a2a5-0216824770c2`],
         avg: [0]
     },
     { id: 61721, name: 'CB TARRAGONA B', color1: "#0A51A1", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/9fd6569c5c01ce09.jpg',
