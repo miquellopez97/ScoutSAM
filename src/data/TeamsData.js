@@ -148,11 +148,12 @@ const teams = [
             { id: 15, important: [`Pivot, força molts tirs`,`Defensem per devant i bloquejem rebot`,`L'hem d'atacar!!! Corre molt, es molt tosco`]},
             { id: 10, important: [`Aler, entra molt dur cap a cistella`,`Pot tirar`,`Esta en bon estat de forma, es jugador estrella`]},
             { id: 9, important: [`Alapivot/Pivot, jugador gran i amb tir`,`Defensem per devant i bloquejem rebot`,`Atents al pop!!!`]},
+            { id: 4, important: [`2-3, l'unic shooter`,`Surt a tirar!!!`,`Obliguem polota al terra`]},
         ],
         videos:[
             {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=7p6RvgjrAPE'}
         ],
-        secondary: [8],
+        secondary: [8, 4],
         tips: [`Tant Mauro #10 com Bort poden tirar #9`],
         pointsConsider: {
             def: [`Control del rebot i defensa per devant a Unai #15`, `No deixar pensar al Gerard #8`],
