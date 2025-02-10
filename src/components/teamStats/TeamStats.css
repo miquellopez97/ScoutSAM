@@ -1,0 +1,25 @@
+.rows-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: flex-start; /* Asegura que las columnas se alineen arriba */
+}
+
+.column {
+    flex: 1;
+    max-width: 32%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column; /* Para alinear los elementos verticalmente */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaciado entre videos */
+}
+
+.video-container div {
+    max-width: 100%; /* Evita que los videos se expandan más de la columna */
+}

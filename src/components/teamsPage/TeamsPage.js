@@ -7,7 +7,7 @@ const TeamsPage = () => {
   return (
     <div className="teams-page-container">
       <h1 className="page-title">
-        Copa Catalunya Masculina - FASE PRÈVIA- 02
+        Copa Catalunya Masculina - FASE PRÈVIA - 01 - 2025
       </h1>
       <div className="teams-container">
         {teamsData.map((team) => (

@@ -73,6 +73,8 @@ const PlayerStats = ({ player, tip1, tip2, tip3 }) => {
 
   const playerName = player.name.length > 30 ? `${player.name.slice(0, 30)}...` : player.name;
 
+  console.log(imageSrc);
+
   return (
     <div style={ playerCard }>
       <div className="row">
@@ -85,7 +87,7 @@ const PlayerStats = ({ player, tip1, tip2, tip3 }) => {
                 <CircleInfo avg={avg2} number1={player.sumShotsOfTwoSuccessful} number2={player.sumShotsOfTwoAttempted} text="T2" />
                 <CircleInfo avg={avg3} number1={player.sumShotsOfThreeSuccessful} number2={player.sumShotsOfThreeAttempted} text="T3" />
               </div>
-              <img src={imageSrc} alt={player.name} style={imageStyle} />
+              {(imageSrc ? <img src={imageSrc} alt={player.name} style={imageStyle} /> : <img src='https://cdn-icons-png.flaticon.com/512/3097/3097257.png' alt={player.name} style={imageStyle} />)}
               <div>
                 {tip1 ? <p>- {tip1}</p> : <p>-Work in progress</p>}
                 {tip2 ? <p>- {tip2}</p> : <p>-Work in progress</p>}
