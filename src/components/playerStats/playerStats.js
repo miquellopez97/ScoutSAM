@@ -89,9 +89,9 @@ const PlayerStats = ({ player, tip1, tip2, tip3 }) => {
               </div>
               {(imageSrc ? <img src={imageSrc} alt={player.name} style={imageStyle} /> : <img src='https://cdn-icons-png.flaticon.com/512/3097/3097257.png' alt={player.name} style={imageStyle} />)}
               <div>
-                {tip1 ? <p>- {tip1}</p> : <p>-Work in progress</p>}
-                {tip2 ? <p>- {tip2}</p> : <p>-Work in progress</p>}
-                {tip3 ? <p>- {tip3}</p> : <p>-Work in progress</p>}
+                {tip1 ? <p>- {tip1}</p> : <p style={{color:"white"}}> .</p>}
+                {tip2 ? <p>- {tip2}</p> : <p style={{color:"white"}}> .</p>}
+                {tip3 ? <p>- {tip3}</p> : <p style={{color:"white"}}> .</p>}
               </div>
             </div>
           </div>

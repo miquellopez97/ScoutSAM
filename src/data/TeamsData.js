@@ -22,15 +22,25 @@ const teams = [
     },
     { id: 69726, name: 'REMM GUITART - BÀSQUET RIBES', color1: "#12348A", color2: "#ffffff", teamPhoto: 'https://d3ah0nqesr6vwc.cloudfront.net/recursos/imatges/multimedia/originals/Zk9NVVJG5NQp4x1W.png',
         players: [
+            { id: 13, important: ['Principal jugador ofensivo', '1c1 en el poste, tiro y 1c1 desde fuera', `Se jugara los ataques atascados`]},
+            { id: 7, important: ['Juega al poste', `Tira mucho de 3p en catch&shoot`]},
+            { id: 23, important: ['Tirador', 'Genera hacia el aro con su amenaza de tiro']},
+            { id: 10, important: ['Principal jugador ofensivo', '1c1 en el poste, tiro y 1c1 desde fuera', `Se jugara los ataques atascados`]},
+            { id: 22, important: ['Pivot fisico']},
+            { id: 1, important: ['Base', `Se le puede apretar la subida`, `Realentizara mucho su juego`]},
         ],
         videos:[
-            {id: 0, title:'Scout' ,url: 'https://www.youtube.com/watch?v=aVXAbQ8S9r4'}
+            {id: 0, title:'Scout' ,url: ''}
         ],
-        secondary: [0, 11, 14],
-        tips: [],
+        secondary: [13, 22, 1],
+        tips: [
+            `Limitar triples liberados`,
+            `Pelea en el rebote`,
+            `Castigar defensa de sus interiores`
+        ],
         pointsConsider: {
-            def: [],
-            atc: []
+            def: [`Defender triple de tiradores`, `Perseguir en indirectos con #10 #23`, `Red en BD con interiores`],
+            atc: [`Atacar interiores en los cambios`, `Movimiento rápido de balón para triangular`, `Atacar en movimiento con pocos botes`]
         },
         avg: [1],
         deletePlayers: [],
